@@ -1,0 +1,9 @@
+.borderr {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.pth {
+    color: white;
+    text-decoration: none;
+}

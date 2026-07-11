@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perekrutan Karyawan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body style="margin: 0px; padding: 0px; height: 100%; ">
+    <div class="d-flex">
+        <div class="borderr p-2 text-white" style="width: 260px; min-height: 100vh; background-color: #161f30;">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex p-0" style="width: 10%;"><img style="width: 50px;" src="img/community.svg"
+                            alt="">
+                    </div>
+                    <div class="col">Recruitment HRD</div>
+                </div>
+                <div class="row p-2">
+                    <div class="col"><a href="index.html" class="pth fw-bolder">Home</a></div>
+                </div>
+                <div class="row p-2">
+                    <div class="col"><a href="Kelola Pelamar.html" class="pth fw-bolder">Kelola Pelamar</a></div>
+                </div>
+                <div class="row p-2">
+                    <div class="col"><a href="Info Loker.html" class="pth fw-bolder">Info Loker</a></div>
+                </div>
+                <div class="row p-2">
+                    <div class="col"><a href="Seleksi Pelamar.html" class="pth fw-bolder">Seleksi</a></div>
+                </div>
+                <div class="row p-2">
+                    <div class="col"><a href="Kontrak Kerja.html" class="pth fw-bolder">Kontrak Kerja</a></div>
+                </div>
+                <div class="row p-2">
+                    <div class="col"><a href="" class="pth fw-bolder">Pemberitahuan </a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main body -->
+        <main style="padding: 20px" class="flex-grow-1 p-4">
+
+            <div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Dashboard HRD</h2>
+                    <span id="tanggal" class="text-secondary"></span>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-2 flex-nowrap">
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h2 class="fw-bold">2</h2>
+                            <p class="mb-0 text-secondary">Loker Aktif</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h2 class="fw-bold">5</h2>
+                            <p class="mb-0 text-secondary">Pelamar</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h2 class="fw-bold">2</h2>
+                            <p class="mb-0 text-secondary">Interview</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h2 class="fw-bold">1</h2>
+                            <p class="mb-0 text-secondary">Diterima</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- bottom bar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+        const hariIni = new Date();
+
+        document.getElementById("tanggal").innerHTML =
+            hariIni.toLocaleDateString('id-ID', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+    </script>
+
+</body>
+
+</html>
